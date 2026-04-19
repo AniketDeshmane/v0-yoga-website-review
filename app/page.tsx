@@ -155,7 +155,7 @@ function FeaturesSection() {
 // Programs Section
 function ProgramsSection() {
   const programs = [
-    { icon: "��", title: "Strength Training", description: "Build strength with yoga flows." },
+    { icon: "💪", title: "Strength Training", description: "Build strength with yoga flows." },
     { icon: "🧘", title: "Stretching", description: "Improve flexibility & posture." },
     { icon: "😊", title: "Facial Yoga", description: "Natural glow & face toning." },
     { icon: "🌿", title: "Natural Facial", description: "Relaxation for skin & mind." },

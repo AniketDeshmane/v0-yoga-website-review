@@ -29,19 +29,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: 'https://prana-yoga-website-premium-7gpq.vercel.app/IMG-20260414-WA0000.jpg',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: 'https://prana-yoga-website-premium-7gpq.vercel.app/IMG-20260414-WA0000.jpg',
   },
 }
 

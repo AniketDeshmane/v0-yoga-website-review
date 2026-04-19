@@ -243,7 +243,7 @@ function PricingSection() {
 
             <div className="text-center mb-8">
               <div className="flex items-center justify-center gap-2">
-                <span className="font-serif text-4xl font-bold text-foreground">₹999</span>
+                <span className="font-serif text-5xl font-bold text-foreground tracking-tight">₹999</span>
                 <span className="text-muted-foreground">/ month</span>
               </div>
               <span className="text-sm text-muted-foreground line-through">₹1499</span>

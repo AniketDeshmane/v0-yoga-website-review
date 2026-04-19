@@ -29,10 +29,10 @@ export const metadata: Metadata = {
   icons: {
     icon: [
       {
-        url: 'https://prana-yoga-website-premium-7gpq.vercel.app/IMG-20260414-WA0000.jpg',
+        url: '/assets/logo.jpg',
       },
     ],
-    apple: 'https://prana-yoga-website-premium-7gpq.vercel.app/IMG-20260414-WA0000.jpg',
+    apple: '/assets/logo.jpg',
   },
 }
 

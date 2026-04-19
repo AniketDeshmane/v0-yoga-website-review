@@ -31,10 +31,14 @@ function StickyHeader() {
         isScrolled ? "bg-card/95 backdrop-blur-md shadow-sm" : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-            <Leaf className="w-5 h-5 text-primary" />
+          <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center overflow-hidden">
+            <img 
+              src="https://prana-yoga-website-premium-7gpq.vercel.app/IMG-20260414-WA0000.jpg" 
+              alt="Prana Yoga Logo" 
+              className="w-full h-full object-contain mix-blend-multiply"
+            />
           </div>
           <span className="font-serif text-xl font-semibold text-foreground">Prana Yoga</span>
         </div>
@@ -408,8 +412,12 @@ function Footer() {
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center">
-                <Leaf className="w-5 h-5 text-background" />
+              <div className="w-10 h-10 rounded-full bg-background/10 flex items-center justify-center overflow-hidden">
+                <img 
+                  src="https://prana-yoga-website-premium-7gpq.vercel.app/IMG-20260414-WA0000.jpg" 
+                  alt="Prana Yoga Logo" 
+                  className="w-full h-full object-contain mix-blend-multiply"
+                />
               </div>
               <span className="font-serif text-xl font-semibold">Prana Yoga</span>
             </div>

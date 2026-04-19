@@ -11,7 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Check, Play, Star, Clock, Users, Award, MessageCircle, ChevronRight, Leaf, Sparkles, Phone } from "lucide-react"
+import { Check, Play, Clock, Users, Award, MessageCircle, ChevronRight, Leaf, Sparkles, Phone } from "lucide-react"
 
 // Sticky Header Component
 function StickyHeader() {
@@ -78,16 +78,8 @@ function HeroSection() {
               </Button>
             </div>
             
-            {/* Trust Badges */}
+            {/* Trust Badge */}
             <div className="flex items-center gap-6 mt-10 pt-8 border-t border-border">
-              <div className="flex items-center gap-2">
-                <Users className="w-5 h-5 text-primary" />
-                <span className="text-sm"><strong className="text-foreground">500+</strong> <span className="text-muted-foreground">Students</span></span>
-              </div>
-              <div className="flex items-center gap-2">
-                <Star className="w-5 h-5 text-primary fill-primary" />
-                <span className="text-sm"><strong className="text-foreground">4.9</strong> <span className="text-muted-foreground">Rating</span></span>
-              </div>
               <div className="flex items-center gap-2">
                 <Award className="w-5 h-5 text-primary" />
                 <span className="text-sm"><strong className="text-foreground">Certified</strong></span>
@@ -237,7 +229,6 @@ function PricingSection() {
     "Natural Facial",
     "Morning & Evening Sessions",
     "Personal Guidance",
-    "Recorded Sessions Access",
     "WhatsApp Support Group",
   ]
 

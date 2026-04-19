@@ -40,7 +40,6 @@ function StickyHeader() {
         </div>
         <nav className="hidden md:flex items-center gap-8">
           <a href="#programs" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Programs</a>
-          <a href="#testimonials" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Testimonials</a>
           <a href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</a>
         </nav>
         <Button className="bg-primary hover:bg-primary/90 text-primary-foreground">
@@ -283,76 +282,6 @@ function PricingSection() {
   )
 }
 
-// Testimonials Section
-function TestimonialsSection() {
-  const testimonials = [
-    {
-      name: "Sneha Reddy",
-      location: "Mumbai",
-      image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=face",
-      rating: 5,
-      text: "The facial yoga sessions have transformed my skin! I look 5 years younger and feel so much more confident. The instructors are amazing.",
-    },
-    {
-      name: "Kavitha Menon",
-      location: "Bangalore",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=face",
-      rating: 5,
-      text: "I have been practicing yoga for 3 months now and the results are incredible. My back pain is gone and I sleep so much better.",
-    },
-    {
-      name: "Deepa Iyer",
-      location: "Chennai",
-      image: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop&crop=face",
-      rating: 5,
-      text: "The live sessions make it feel like a real class. Priya ma'am gives personal attention to everyone. Best decision I made for my health!",
-    },
-  ]
-
-  return (
-    <section id="testimonials" className="py-16 px-4 bg-secondary/50">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
-            What Our Students Say
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Real stories from real people who transformed their lives with Prana Yoga
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-6">
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-card border-border/50">
-              <CardContent className="p-6">
-                <div className="flex gap-1 mb-4">
-                  {Array.from({ length: testimonial.rating }).map((_, i) => (
-                    <Star key={i} className="w-4 h-4 text-amber-500 fill-amber-500" />
-                  ))}
-                </div>
-                <p className="text-muted-foreground mb-6 leading-relaxed">
-                  {`"${testimonial.text}"`}
-                </p>
-                <div className="flex items-center gap-3">
-                  <img
-                    src={testimonial.image}
-                    alt={testimonial.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div>
-                    <p className="font-semibold text-foreground">{testimonial.name}</p>
-                    <p className="text-sm text-muted-foreground">{testimonial.location}</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </div>
-    </section>
-  )
-}
-
 // FAQ Section
 function FAQSection() {
   const faqs = [
@@ -544,7 +473,6 @@ export default function PranaYogaPage() {
       <FeaturesSection />
       <ProgramsSection />
       <PricingSection />
-      <TestimonialsSection />
       <FAQSection />
       <RegistrationSection />
       <Footer />

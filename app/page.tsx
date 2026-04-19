@@ -11,7 +11,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
-import { Check, Play, Star, Clock, Users, Award, MessageCircle, ChevronRight, Leaf, Sparkles, Heart, Phone } from "lucide-react"
+import { Check, Play, Star, Clock, Users, Award, MessageCircle, ChevronRight, Leaf, Sparkles, Phone } from "lucide-react"
 
 // Sticky Header Component
 function StickyHeader() {
@@ -40,7 +40,6 @@ function StickyHeader() {
         </div>
         <nav className="hidden md:flex items-center gap-8">
           <a href="#programs" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Programs</a>
-          <a href="#instructors" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Instructors</a>
           <a href="#testimonials" className="text-sm text-muted-foreground hover:text-foreground transition-colors">Testimonials</a>
           <a href="#faq" className="text-sm text-muted-foreground hover:text-foreground transition-colors">FAQ</a>
         </nav>
@@ -169,7 +168,7 @@ function FeaturesSection() {
 // Programs Section
 function ProgramsSection() {
   const programs = [
-    { icon: "💪", title: "Strength Training", description: "Build strength with yoga flows." },
+    { icon: "��", title: "Strength Training", description: "Build strength with yoga flows." },
     { icon: "🧘", title: "Stretching", description: "Improve flexibility & posture." },
     { icon: "✨", title: "Facial Yoga", description: "Natural glow & face toning." },
     { icon: "🌿", title: "Natural Facial", description: "Relaxation for skin & mind." },
@@ -224,77 +223,6 @@ function ProgramsSection() {
               className="w-full h-64 object-cover hover:scale-105 transition-transform duration-300"
             />
           </div>
-        </div>
-      </div>
-    </section>
-  )
-}
-
-// Instructors Section
-function InstructorsSection() {
-  const instructors = [
-    {
-      name: "Priya Sharma",
-      title: "Lead Yoga Instructor",
-      experience: "10+ years experience",
-      specialization: "Hatha & Vinyasa Yoga",
-      image: "https://images.unsplash.com/photo-1594381898411-846e7d193883?w=300&h=300&fit=crop&crop=face",
-    },
-    {
-      name: "Ananya Patel",
-      title: "Facial Yoga Expert",
-      experience: "8+ years experience",
-      specialization: "Face Yoga & Wellness",
-      image: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?w=300&h=300&fit=crop&crop=face",
-    },
-    {
-      name: "Meera Kapoor",
-      title: "Meditation Coach",
-      experience: "12+ years experience",
-      specialization: "Mindfulness & Pranayama",
-      image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=300&h=300&fit=crop&crop=face",
-    },
-  ]
-
-  return (
-    <section id="instructors" className="py-16 px-4 bg-secondary/50">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="font-serif text-3xl md:text-4xl font-bold text-foreground mb-4 text-balance">
-            Meet Your Instructors
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Learn from certified experts who are passionate about your wellness journey
-          </p>
-        </div>
-
-        <div className="grid md:grid-cols-3 gap-8">
-          {instructors.map((instructor, index) => (
-            <Card key={index} className="bg-card border-border/50 overflow-hidden hover:shadow-lg transition-shadow">
-              <div className="relative">
-                <img
-                  src={instructor.image}
-                  alt={instructor.name}
-                  className="w-full h-64 object-cover object-top"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
-                <div className="absolute bottom-4 left-4 right-4 text-white">
-                  <h3 className="font-serif text-xl font-semibold">{instructor.name}</h3>
-                  <p className="text-sm opacity-90">{instructor.title}</p>
-                </div>
-              </div>
-              <CardContent className="p-5">
-                <div className="flex items-center gap-2 text-sm text-muted-foreground mb-2">
-                  <Award className="w-4 h-4 text-primary" />
-                  {instructor.experience}
-                </div>
-                <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                  <Heart className="w-4 h-4 text-primary" />
-                  {instructor.specialization}
-                </div>
-              </CardContent>
-            </Card>
-          ))}
         </div>
       </div>
     </section>
@@ -615,7 +543,6 @@ export default function PranaYogaPage() {
       <HeroSection />
       <FeaturesSection />
       <ProgramsSection />
-      <InstructorsSection />
       <PricingSection />
       <TestimonialsSection />
       <FAQSection />

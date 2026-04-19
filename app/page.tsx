@@ -72,10 +72,6 @@ function HeroSection() {
                 Register Free
                 <ChevronRight className="w-4 h-4 ml-1" />
               </Button>
-              <Button size="lg" variant="outline" className="border-primary/30 text-foreground hover:bg-primary/5">
-                <Play className="w-4 h-4 mr-2" />
-                Watch Preview
-              </Button>
             </div>
             
             {/* Trust Badge */}
